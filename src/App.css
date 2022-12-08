@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Marcellus+SC&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-div {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    rgb(77, 143, 164),
+    rgb(153, 0, 153)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inside-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 1000px;
+  height: 600px;
+  margin: auto;
+}
+
+.top-content-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.add-button {
+  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+  color: rgba(74, 21, 110, 1);
+}
+
+.plus-icon {
+  width: 20px;
+  height: 20px;
+  margin: 8px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 50px;
+  color: white;
+  text-shadow: 0 3px 8px white;
+}
+
+input {
+  width: 300px;
+  padding-left: 10px;
+  font-size: 18px;
+  font-family: "Marcellus", serif;
+  font-weight: 600;
+}
+
+.select {
+  position: relative;
+  color: rgba(74, 21, 110, 1);
+  width: 15rem;
+  cursor: pointer;
+  background-image: url(./arrow_drop_down_black.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: rgba(74, 21, 110, 1);
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.select:hover::after {
+  background-color: white;
+  color: rgba(74, 21, 110, 1);
+}
+
+.inside-select {
+  font-family: "Marcellus", serif;
+  width: 15rem;
+  height: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  font-size: 1.2em;
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.bottom-content-div {
+  display: flex;
+  width: 500px;
+  gap: 15px;
+  margin: 60px auto;
+  flex-direction: column;
+}
+
+.bottom-inside-div {
+  animation: zoom-in 0.8s 1 ease-in;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+@keyframes zoom-in {
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  0% {
+    transform: scale(0);
+  }
+}
+
+p {
+  display: flex;
+  width: 300px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 10px;
+  text-align: left;
+  align-items: center;
+  font-family: "Marcellus", serif;
+  background-color: white;
+}
+.btn-done {
+  width: 42px;
+  height: 42px;
+  border: none;
+  background-color: rgb(0, 68, 152);
+}
+
+.done-icon {
+  width: 28px;
+  height: 28px;
+  color: white;
+}
+
+.delete-icon {
+  width: 28px;
+  height: 28px;
+  color: white;
+}
+
+.btn-remove {
+  width: 42px;
+  height: 42px;
+  background-color: rgb(146, 0, 151);
+  border: none;
+}
+
+.fall {
+  animation: fall-apart 0.8s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes fall-apart {
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
